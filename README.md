@@ -1,29 +1,81 @@
-# html-authentication-poc
+# Authentication System Styling
 
-A HTML authentication pages.
+This project is a simple Bootstrap 5 styled authentication flow with 5 pages:
 
-## Pages
+- `index.html` (Login)
+- `register.html` (Registration)
+- `forgot-password.html` (Forgot Password)
+- `reset-password.html` (Reset Password)
+- `dashboard.html` (Dashboard)
 
-- `login.html` -> Login form with email and password
-- `register.html` -> Registration form for new users 
-- `forgot-password.html` -> Form to request a password reset link 
-- `reset-password.html` -> Form to set a new password 
-- `dashboard.html` -> Landing page after login 
+It uses one shared stylesheet: `styles.css`.
 
-## How to Run
-
-1. Clone or download this repository
-2. Open `login.html` in any web browser
-3. Click the links to navigate between pages
-
-## Page Redirections
-
-- **Login** -> Register, Forgot Password 
-- **Register** -> Login 
-- **Forgot Password** -> Login, Reset Password 
-- **Reset Password** -> Login, Forgot Password 
-- **Dashboard** -> Login and Logout
-
-## Tech Stack
+## Tech Used
 
 - HTML5
+- Bootstrap 5.3.3 (CDN)
+- Bootstrap Icons 1.11.3 (CDN)
+- Custom CSS
+- Vanilla JavaScript
+- Google Font (Poppins)
+
+## Implemented Requirements
+
+- Bootstrap CDN added in all HTML files
+- Bootstrap JavaScript bundle added in all HTML files
+- Bootstrap Icons added in all HTML files
+- Bootstrap card layout used in all auth pages
+- Inputs, labels, and buttons styled properly
+- Password visibility toggle added in reset and register
+- Dashboard includes navbar, container layout, welcome section, logout button, and clean UI
+- Custom CSS includes:
+  - color theme
+  - Google Fonts
+  - hover effects for buttons/links
+  - box shadows for cards
+  - gradient background
+  - spacing and transitions
+- Responsive for mobile, tablet, laptop, and desktop
+
+## Page Flow
+
+- Login -> Dashboard
+- Login -> Register
+- Login -> Forgot Password
+- Register -> Dashboard
+- Register -> Login
+- Register -> Forgot Password
+- Forgot Password -> Reset Password
+- Forgot Password -> Login
+- Forgot Password -> Register
+- Reset Password -> Login
+- Reset Password -> Register
+- Dashboard -> Login (Logout)
+
+## Dynamic Behavior
+
+- Registered name/email stored in `localStorage`
+- Dashboard shows saved user name and email
+- Forgot Password stores email for Reset Password page hint
+
+## Run
+
+Open `index.html` in browser and test all navigation links.
+
+## Screenshots
+
+Add these screenshots inside `screenshots/` before final submission:
+
+- `login.png`
+- `register.png`
+- `forgot-password.png`
+- `reset-password.png`
+- `dashboard.png`
+
+## Screenshots
+
+![Alt text](./screenshots/dashboard.png)
+![Alt text](./screenshots/forgot-password.png)
+![Alt text](./screenshots/login.png)
+![Alt text](./screenshots/register.png)
+![Alt text](./screenshots/reset-password.png)
