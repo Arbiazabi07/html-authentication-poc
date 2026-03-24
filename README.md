@@ -22,12 +22,7 @@ It uses one shared stylesheet: `styles.css`.
 ## Implemented Requirements
 
 - Bootstrap CDN added in all HTML files
-- Bootstrap JavaScript bundle added in all HTML files
 - Bootstrap Icons added in all HTML files
-- Bootstrap card layout used in all auth pages
-- Inputs, labels, and buttons styled properly
-- Password visibility toggle added in reset and register
-- Dashboard includes navbar, container layout, welcome section, logout button, and clean UI
 - Custom CSS includes:
   - color theme
   - Google Fonts
@@ -52,25 +47,10 @@ It uses one shared stylesheet: `styles.css`.
 - Reset Password -> Register
 - Dashboard -> Login (Logout)
 
-## Dynamic Behavior
-
-- Registered name/email stored in `localStorage`
-- Dashboard shows saved user name and email
-- Forgot Password stores email for Reset Password page hint
-
 ## Run
 
 Open `index.html` in browser and test all navigation links.
 
-## Screenshots
-
-Add these screenshots inside `screenshots/` before final submission:
-
-- `login.png`
-- `register.png`
-- `forgot-password.png`
-- `reset-password.png`
-- `dashboard.png`
 
 ## Screenshots
 
